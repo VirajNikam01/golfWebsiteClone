@@ -6,6 +6,16 @@
     color: #ffff
 }
 
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background: linear-gradient(to right, #95C11E, #000);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 50%;
+}
+
 html,
 body {
     height: 100%;
@@ -252,4 +262,88 @@ video {
    height: 100%;
    object-fit: cover;
    width: 14%;
+  }
+
+  #page3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #page3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 60%;
+    text-align: center;
+    line-height: 45px;
+  }
+  #page3 img{
+    position: absolute;
+    height: 60px;
+  }
+  #page3 #colon1{
+    left: 15%;
+    top: 25%;
+  }
+  #page3 #colon2{
+    bottom: 30%;
+    right: 15%;
+  }
+  #page4{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    height: 30vh;
+    width: 100%;
+  }
+  .elem{
+    position: relative;
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+  }
+  .elem h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #000;
+    font-weight: 700;
+    background-color: #95C11E;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+  }
+  .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;;
+  }
+  .elem:hover h2{
+    color: #fff;
+    background-color: transparent;
+  }
+  .elem:hover img{
+    scale: 1;
+  }
+  #page4 h1{
+    font-size: 90px;
+    position: absolute;
+    top: -20%;
+    font-weight: 900;
+    color: #000;
+    -webkit-text-stroke: 2px #ffff;
+  }
+  #footer{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #25A435, #95C11E);
   }
